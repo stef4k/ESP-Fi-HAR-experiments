@@ -1,0 +1,7 @@
+ModelCode/.venv310/
+ModelCode/Data/*
+ModelCode/logs/*
+ModelCode/benchmark_outputs/*
+*.pyc*
+*.csv
+*.mat
