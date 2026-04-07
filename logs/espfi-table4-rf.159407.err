@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 923, in <module>
+    main()
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 910, in main
+    results_df, summary, comparison = run_benchmark(args)
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 744, in run_benchmark
+    manifest, inferred_map, activity_order = build_manifest(args.data_root, args.dataset_kind)
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 349, in build_manifest
+    return build_manifest_rf_csv(data_root)
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 278, in build_manifest_rf_csv
+    raise FileNotFoundError(f"No .csv files found under: {data_root}")
+FileNotFoundError: No .csv files found under: /gpfs/workdir/balazsk/test/ModelCode/Data/rf-based_data

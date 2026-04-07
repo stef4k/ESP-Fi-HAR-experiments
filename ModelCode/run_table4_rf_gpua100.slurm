@@ -2,7 +2,7 @@
 #SBATCH --job-name=espfi-table4-rf-heavy
 #SBATCH --output=logs/%x.%j.out
 #SBATCH --error=logs/%x.%j.err
-#SBATCH --partition=gpu
+#SBATCH --partition=gpua100
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-task=8
 #SBATCH --mem=64G

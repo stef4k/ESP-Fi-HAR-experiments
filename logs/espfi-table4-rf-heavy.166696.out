@@ -1,0 +1,43 @@
+Torch version: 2.7.1+cu118
+torch.version.cuda: 11.8
+GPU: NVIDIA A100-SXM4-40GB
+Required arch: sm_80
+Torch arch list: sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_37 sm_90
+Device: cuda
+Dataset kind: rf_csv
+Data root: /gpfs/workdir/balazsk/test/ModelCode/Data/rf-based_data
+Scenes: [1, 2, 3]
+Inferred activity-id mapping: {6: 'bouncing_ball', 8: 'forward_bend', 3: 'hand_swing', 7: 'jogging_in_place', 1: 'jumping_jack', 9: 'sitting_down', 2: 'squatting', 10: 'standing', 4: 'walk_from_center_to_rx', 5: 'walk_from_center_to_tx'}
+Activity order: ['jumping_jack', 'squatting', 'hand_swing', 'walk_from_center_to_rx', 'walk_from_center_to_tx', 'bouncing_ball', 'jogging_in_place', 'forward_bend', 'sitting_down', 'standing']
+Total samples: 4800
+Scenes: [1, 2, 3]
+Subjects: [1, 2, 3, 4, 5, 6, 7, 8]
+Activities: ['bouncing_ball', 'forward_bend', 'hand_swing', 'jogging_in_place', 'jumping_jack', 'sitting_down', 'squatting', 'standing', 'walk_from_center_to_rx', 'walk_from_center_to_tx']
+
+Samples per scene:
+   scene     scene_name     n
+0      1  Environment 1  1600
+1      2  Environment 2  1600
+2      3  Environment 3  1600
+Total LOSO folds: 24
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_heavy/benchmark_fold_results.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_heavy/benchmark_scene_summary.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_heavy/benchmark_vs_paper_table4.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_heavy/benchmark_vs_paper_table4.md
+
+Scene summary (rounded):
+model_type            model  scene    scene_name  folds  acc_mean  acc_std  f1_mean
+        DL EfficientNetLite      1 Environment 1      8     46.38     7.72    41.24
+        DL EfficientNetLite      2 Environment 2      8     28.12     6.29    22.97
+        DL EfficientNetLite      3 Environment 3      8     25.94     7.31    20.09
+        DL      MobileNetV3      1 Environment 1      8     46.44     7.38    41.33
+        DL      MobileNetV3      2 Environment 2      8     18.75     8.85    16.27
+        DL      MobileNetV3      3 Environment 3      8     30.19     8.77    24.40
+        DL         ResNet18      1 Environment 1      8     53.06     6.54    48.61
+        DL         ResNet18      2 Environment 2      8     29.19     9.18    23.46
+        DL         ResNet18      3 Environment 3      8     31.25     7.72    23.38
+        ML               LR      1 Environment 1      8     36.75     8.63    33.69
+        ML               LR      2 Environment 2      8     24.44    11.90    19.15
+        ML               LR      3 Environment 3      8     27.19    13.24    22.18
+
+Comparison vs paper: skipped / empty for this dataset.

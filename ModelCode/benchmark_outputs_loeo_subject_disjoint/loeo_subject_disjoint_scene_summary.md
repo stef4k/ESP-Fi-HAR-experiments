@@ -1,0 +1,42 @@
+| model_type   | model            |   target_scene | target_scene_name   |   folds |   acc_mean |   acc_std |   f1_mean |
+|:-------------|:-----------------|---------------:|:--------------------|--------:|-----------:|----------:|----------:|
+| DL           | CNN              |              1 | Corridor            |       8 |      50.71 |      7.86 |     46.24 |
+| DL           | CNN              |              2 | Office              |       8 |      50.71 |     14.98 |     46.46 |
+| DL           | CNN              |              3 | Meeting room        |       8 |      56.43 |      8.94 |     52.33 |
+| DL           | CNN              |              4 | Laboratory          |       8 |      53.21 |     12.77 |     48.79 |
+| DL           | EfficientNetLite |              1 | Corridor            |       8 |      60.36 |     13.33 |     57.91 |
+| DL           | EfficientNetLite |              2 | Office              |       8 |      62.32 |     11.83 |     60.38 |
+| DL           | EfficientNetLite |              3 | Meeting room        |       8 |      68.39 |      6.13 |     65.15 |
+| DL           | EfficientNetLite |              4 | Laboratory          |       8 |      65.54 |     12.37 |     62.56 |
+| DL           | GRU              |              1 | Corridor            |       8 |      19.29 |      8.05 |     13.58 |
+| DL           | GRU              |              2 | Office              |       8 |      25.18 |      8.43 |     21.6  |
+| DL           | GRU              |              3 | Meeting room        |       8 |      26.61 |      7.08 |     19.21 |
+| DL           | GRU              |              4 | Laboratory          |       8 |      28.04 |     18.34 |     23.88 |
+| DL           | LSTM             |              1 | Corridor            |       8 |      20.18 |     10.11 |     13.15 |
+| DL           | LSTM             |              2 | Office              |       8 |      25    |      5.51 |     20.28 |
+| DL           | LSTM             |              3 | Meeting room        |       8 |      30.54 |      9.95 |     21.6  |
+| DL           | LSTM             |              4 | Laboratory          |       8 |      32.14 |     12.57 |     27.79 |
+| DL           | MobileNetV3      |              1 | Corridor            |       8 |      52.5  |     15.7  |     48.78 |
+| DL           | MobileNetV3      |              2 | Office              |       8 |      61.61 |      9.82 |     59.8  |
+| DL           | MobileNetV3      |              3 | Meeting room        |       8 |      69.11 |      7    |     66.79 |
+| DL           | MobileNetV3      |              4 | Laboratory          |       8 |      64.46 |      9.79 |     62.79 |
+| DL           | ResNet18         |              1 | Corridor            |       8 |      74.29 |      8.22 |     72.96 |
+| DL           | ResNet18         |              2 | Office              |       8 |      74.29 |      8.97 |     72.72 |
+| DL           | ResNet18         |              3 | Meeting room        |       8 |      79.82 |      8.28 |     78.32 |
+| DL           | ResNet18         |              4 | Laboratory          |       8 |      75.54 |      6.85 |     73.87 |
+| DL           | Transformer      |              1 | Corridor            |       8 |      20    |      5.91 |     14.27 |
+| DL           | Transformer      |              2 | Office              |       8 |      23.75 |      8.9  |     21.41 |
+| DL           | Transformer      |              3 | Meeting room        |       8 |      19.64 |      8.9  |     14.59 |
+| DL           | Transformer      |              4 | Laboratory          |       8 |      28.04 |      9.16 |     25.86 |
+| ML           | LR               |              1 | Corridor            |       8 |      18.57 |      4.77 |     16.98 |
+| ML           | LR               |              2 | Office              |       8 |      18.04 |      5.23 |     16.74 |
+| ML           | LR               |              3 | Meeting room        |       8 |      16.96 |      6.5  |     14.53 |
+| ML           | LR               |              4 | Laboratory          |       8 |      15.18 |      3.74 |     11.26 |
+| ML           | RF               |              1 | Corridor            |       8 |      23.21 |      6.6  |     18.13 |
+| ML           | RF               |              2 | Office              |       8 |      23.39 |      7.32 |     20.13 |
+| ML           | RF               |              3 | Meeting room        |       8 |      25.89 |      6.63 |     19.76 |
+| ML           | RF               |              4 | Laboratory          |       8 |      28.75 |      9.55 |     24.77 |
+| ML           | SVM              |              1 | Corridor            |       8 |      22.68 |      7.46 |     18.05 |
+| ML           | SVM              |              2 | Office              |       8 |      24.29 |      7.71 |     19.22 |
+| ML           | SVM              |              3 | Meeting room        |       8 |      24.82 |      5.76 |     18.15 |
+| ML           | SVM              |              4 | Laboratory          |       8 |      20.18 |      4.86 |     15.82 |

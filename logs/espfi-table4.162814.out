@@ -1,0 +1,113 @@
+Torch version: 2.7.1+cu118
+torch.version.cuda: 11.8
+GPU: NVIDIA A100-SXM4-40GB
+Required arch: sm_80
+Torch arch list: sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_37 sm_90
+Device: cuda
+Dataset kind: espfi_mat
+Data root: /gpfs/workdir/balazsk/test/ModelCode/Data_full_mat
+Scenes: [1, 2, 3, 4]
+Inferred activity-id mapping: {1: 'run', 2: 'walk', 3: 'jump', 4: 'squat', 5: 'arm_wave', 6: 'turn', 7: 'fall'}
+Activity order: ['arm_wave', 'fall', 'jump', 'run', 'squat', 'turn', 'walk']
+Total samples: 2240
+Scenes: [1, 2, 3, 4]
+Subjects: [1, 2, 3, 4, 5, 6, 7, 8]
+Activities: ['arm_wave', 'fall', 'jump', 'run', 'squat', 'turn', 'walk']
+
+Samples per scene:
+   scene    scene_name    n
+0      1      Corridor  560
+1      2        Office  560
+2      3  Meeting room  560
+3      4    Laboratory  560
+Total LOSO folds: 32
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs/benchmark_fold_results.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs/benchmark_scene_summary.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs/benchmark_vs_paper_table4.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs/benchmark_vs_paper_table4.md
+
+Scene summary (rounded):
+model_type            model  scene   scene_name  folds  acc_mean  acc_std  f1_mean
+        DL              CNN      1     Corridor      8     42.86    10.30    38.98
+        DL              CNN      2       Office      8     45.89    13.32    42.13
+        DL              CNN      3 Meeting room      8     46.61     8.67    45.37
+        DL              CNN      4   Laboratory      8     31.43     7.82    26.80
+        DL EfficientNetLite      1     Corridor      8     42.68    10.57    38.65
+        DL EfficientNetLite      2       Office      8     47.68    12.48    46.35
+        DL EfficientNetLite      3 Meeting room      8     61.96     7.97    60.10
+        DL EfficientNetLite      4   Laboratory      8     37.86     8.81    32.53
+        DL              GRU      1     Corridor      8     23.21    10.27    18.66
+        DL              GRU      2       Office      8     23.39     7.78    21.14
+        DL              GRU      3 Meeting room      8     26.79     7.35    23.19
+        DL              GRU      4   Laboratory      8     22.50     6.90    17.81
+        DL             LSTM      1     Corridor      8     27.14    10.22    21.90
+        DL             LSTM      2       Office      8     28.93     7.23    26.29
+        DL             LSTM      3 Meeting room      8     35.71     8.77    32.32
+        DL             LSTM      4   Laboratory      8     25.36    10.24    20.44
+        DL      MobileNetV3      1     Corridor      8     44.11    13.56    39.63
+        DL      MobileNetV3      2       Office      8     55.18     9.22    53.32
+        DL      MobileNetV3      3 Meeting room      8     50.18     7.95    47.77
+        DL      MobileNetV3      4   Laboratory      8     34.29    10.77    30.59
+        DL         ResNet18      1     Corridor      8     58.93    10.93    56.47
+        DL         ResNet18      2       Office      8     72.86    10.27    70.94
+        DL         ResNet18      3 Meeting room      8     75.54     5.74    73.73
+        DL         ResNet18      4   Laboratory      8     51.25    12.90    48.01
+        DL      Transformer      1     Corridor      8     30.00     7.28    24.99
+        DL      Transformer      2       Office      8     30.71     8.97    28.37
+        DL      Transformer      3 Meeting room      8     28.57    12.73    25.01
+        DL      Transformer      4   Laboratory      8     28.04     8.94    23.21
+        ML               LR      1     Corridor      8     19.64     7.31    17.13
+        ML               LR      2       Office      8     25.54     3.37    23.69
+        ML               LR      3 Meeting room      8     17.14     4.71    13.86
+        ML               LR      4   Laboratory      8     18.75     5.58    14.52
+        ML               RF      1     Corridor      8     30.89    13.79    26.62
+        ML               RF      2       Office      8     30.36     4.63    29.27
+        ML               RF      3 Meeting room      8     30.89     8.40    27.43
+        ML               RF      4   Laboratory      8     20.54     5.76    16.89
+        ML              SVM      1     Corridor      8     30.36    10.82    26.64
+        ML              SVM      2       Office      8     31.43     8.05    29.42
+        ML              SVM      3 Meeting room      8     27.50     6.00    22.01
+        ML              SVM      4   Laboratory      8     20.36     6.99    16.76
+
+Comparison vs paper (rounded):
+model_type            model  scene   scene_name  folds  acc_mean  acc_std  f1_mean  paper_acc_mean  paper_acc_std  paper_f1_mean  delta_acc_mean  delta_acc_std  delta_f1_mean
+        DL              CNN      1     Corridor      8     42.86    10.30    38.98           57.55          11.43          53.20          -14.69          -1.13         -14.22
+        DL              CNN      2       Office      8     45.89    13.32    42.13           48.31           8.02          43.80           -2.42           5.30          -1.67
+        DL              CNN      3 Meeting room      8     46.61     8.67    45.37           48.26          11.14          42.70           -1.65          -2.47           2.67
+        DL              CNN      4   Laboratory      8     31.43     7.82    26.80           52.61          12.19          46.89          -21.18          -4.37         -20.09
+        DL EfficientNetLite      1     Corridor      8     42.68    10.57    38.65           61.60          10.60          57.13          -18.92          -0.03         -18.48
+        DL EfficientNetLite      2       Office      8     47.68    12.48    46.35           63.74           8.74          58.80          -16.06           3.74         -12.45
+        DL EfficientNetLite      3 Meeting room      8     61.96     7.97    60.10           61.98           5.14          57.93           -0.02           2.83           2.17
+        DL EfficientNetLite      4   Laboratory      8     37.86     8.81    32.53           50.35           6.96          46.27          -12.49           1.85         -13.74
+        DL              GRU      1     Corridor      8     23.21    10.27    18.66           30.93           3.78          28.74           -7.72           6.49         -10.08
+        DL              GRU      2       Office      8     23.39     7.78    21.14           38.02           8.63          33.00          -14.63          -0.85         -11.86
+        DL              GRU      3 Meeting room      8     26.79     7.35    23.19           34.55           4.21          31.17           -7.76           3.14          -7.98
+        DL              GRU      4   Laboratory      8     22.50     6.90    17.81           28.38           8.98          24.56           -5.88          -2.08          -6.75
+        DL             LSTM      1     Corridor      8     27.14    10.22    21.90           32.15          13.40          29.82           -5.01          -3.18          -7.92
+        DL             LSTM      2       Office      8     28.93     7.23    26.29           38.02          14.21          33.80           -9.09          -6.98          -7.51
+        DL             LSTM      3 Meeting room      8     35.71     8.77    32.32           36.20          12.04          33.84           -0.49          -3.27          -1.52
+        DL             LSTM      4   Laboratory      8     25.36    10.24    20.44           32.73          13.25          30.21           -7.37          -3.01          -9.77
+        DL      MobileNetV3      1     Corridor      8     44.11    13.56    39.63           53.64          13.24          47.28           -9.53           0.32          -7.65
+        DL      MobileNetV3      2       Office      8     55.18     9.22    53.32           51.82          11.85          47.00            3.36          -2.63           6.32
+        DL      MobileNetV3      3 Meeting room      8     50.18     7.95    47.77           53.28          15.18          46.80           -3.10          -7.23           0.97
+        DL      MobileNetV3      4   Laboratory      8     34.29    10.77    30.59           43.31          16.25          38.43           -9.02          -5.48          -7.84
+        DL         ResNet18      1     Corridor      8     58.93    10.93    56.47           63.59          14.91          60.81           -4.66          -3.98          -4.34
+        DL         ResNet18      2       Office      8     72.86    10.27    70.94           70.11          19.60          64.00            2.75          -9.33           6.94
+        DL         ResNet18      3 Meeting room      8     75.54     5.74    73.73           65.53          18.22          61.26           10.01         -12.48          12.47
+        DL         ResNet18      4   Laboratory      8     51.25    12.90    48.01           58.33          22.73          49.14           -7.08          -9.83          -1.13
+        DL      Transformer      1     Corridor      8     30.00     7.28    24.99           54.43          12.30          49.85          -24.43          -5.02         -24.86
+        DL      Transformer      2       Office      8     30.71     8.97    28.37           41.93           9.47          38.20          -11.22          -0.50          -9.83
+        DL      Transformer      3 Meeting room      8     28.57    12.73    25.01           47.51          10.71          42.43          -18.94           2.02         -17.42
+        DL      Transformer      4   Laboratory      8     28.04     8.94    23.21           50.33          15.11          46.35          -22.29          -6.17         -23.14
+        ML               LR      1     Corridor      8     19.64     7.31    17.13           19.29           7.63          16.87            0.35          -0.32           0.26
+        ML               LR      2       Office      8     25.54     3.37    23.69           22.86           3.98          19.51            2.68          -0.61           4.18
+        ML               LR      3 Meeting room      8     17.14     4.71    13.86           16.43           5.05          12.66            0.71          -0.34           1.20
+        ML               LR      4   Laboratory      8     18.75     5.58    14.52           14.82           2.36          11.14            3.93           3.22           3.38
+        ML               RF      1     Corridor      8     30.89    13.79    26.62           23.57           7.14          19.01            7.32           6.65           7.61
+        ML               RF      2       Office      8     30.36     4.63    29.27           21.25           6.16          17.19            9.11          -1.53          12.08
+        ML               RF      3 Meeting room      8     30.89     8.40    27.43           24.64          12.37          21.82            6.25          -3.97           5.61
+        ML               RF      4   Laboratory      8     20.54     5.76    16.89           17.68           7.59          13.47            2.86          -1.83           3.42
+        ML              SVM      1     Corridor      8     30.36    10.82    26.64           24.64           8.01          19.00            5.72           2.81           7.64
+        ML              SVM      2       Office      8     31.43     8.05    29.42           24.11           7.09          19.08            7.32           0.96          10.34
+        ML              SVM      3 Meeting room      8     27.50     6.00    22.01           20.00           9.20          15.83            7.50          -3.20           6.18
+        ML              SVM      4   Laboratory      8     20.36     6.99    16.76           19.82          10.61          14.31            0.54          -3.62           2.45

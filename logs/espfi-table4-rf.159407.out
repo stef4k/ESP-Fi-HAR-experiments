@@ -1,0 +1,9 @@
+Torch version: 2.7.1+cu118
+torch.version.cuda: 11.8
+GPU: NVIDIA A100-SXM4-40GB
+Required arch: sm_80
+Torch arch list: sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_37 sm_90
+Device: cuda
+Dataset kind: rf_csv
+Data root: /gpfs/workdir/balazsk/test/ModelCode/Data/rf-based_data
+Scenes: [1, 2, 3]

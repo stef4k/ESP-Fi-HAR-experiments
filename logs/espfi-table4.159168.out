@@ -1,0 +1,21 @@
+Torch version: 2.7.1+cu118
+torch.version.cuda: 11.8
+GPU: NVIDIA A100-SXM4-40GB
+Required arch: sm_80
+Torch arch list: sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_37 sm_90
+Device: cuda
+Data root: /gpfs/workdir/balazsk/test/ModelCode/Data
+Scenes: [1, 2, 3, 4]
+Inferred activity-id mapping: {1: 'run', 2: 'walk', 3: 'jump', 4: 'squat', 5: 'arm_wave', 6: 'turn', 7: 'fall'}
+Total samples: 560
+Scenes: [3]
+Subjects: [1, 2, 3, 4, 5, 6, 7, 8]
+Activities: ['arm_wave', 'fall', 'jump', 'run', 'squat', 'turn', 'walk']
+
+Samples per scene:
+   scene    scene_name    n
+0      3  Meeting room  560
+[warn] scene=1 missing in manifest, skipping.
+[warn] scene=2 missing in manifest, skipping.
+[warn] scene=4 missing in manifest, skipping.
+Total LOSO folds: 8

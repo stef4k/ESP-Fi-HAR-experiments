@@ -1,0 +1,62 @@
+ML SVM:   0%|          | 0/8 [00:00<?, ?it/s]ML SVM:  12%|█▎        | 1/8 [01:07<07:49, 67.01s/it]ML SVM:  25%|██▌       | 2/8 [01:11<03:02, 30.36s/it]ML SVM:  38%|███▊      | 3/8 [01:16<01:32, 18.56s/it]ML SVM:  50%|█████     | 4/8 [01:20<00:52, 13.02s/it]ML SVM:  62%|██████▎   | 5/8 [01:25<00:29,  9.96s/it]ML SVM:  75%|███████▌  | 6/8 [01:29<00:16,  8.11s/it]ML SVM:  88%|████████▊ | 7/8 [01:34<00:06,  6.93s/it]ML SVM: 100%|██████████| 8/8 [01:38<00:00,  6.16s/it]ML SVM: 100%|██████████| 8/8 [01:38<00:00, 12.35s/it]
+ML RF:   0%|          | 0/8 [00:00<?, ?it/s]ML RF:  12%|█▎        | 1/8 [00:06<00:42,  6.10s/it]ML RF:  25%|██▌       | 2/8 [00:11<00:35,  5.92s/it]ML RF:  38%|███▊      | 3/8 [00:17<00:29,  5.81s/it]ML RF:  50%|█████     | 4/8 [00:23<00:23,  5.84s/it]ML RF:  62%|██████▎   | 5/8 [00:29<00:17,  5.80s/it]ML RF:  75%|███████▌  | 6/8 [00:35<00:11,  5.83s/it]ML RF:  88%|████████▊ | 7/8 [00:41<00:05,  5.91s/it]ML RF: 100%|██████████| 8/8 [00:47<00:00,  5.97s/it]ML RF: 100%|██████████| 8/8 [00:47<00:00,  5.91s/it]
+ML LR:   0%|          | 0/8 [00:00<?, ?it/s]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  12%|█▎        | 1/8 [07:48<54:38, 468.39s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  25%|██▌       | 2/8 [15:36<46:50, 468.39s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  38%|███▊      | 3/8 [23:25<39:01, 468.36s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  50%|█████     | 4/8 [31:13<31:12, 468.22s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  62%|██████▎   | 5/8 [39:00<23:24, 468.07s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  75%|███████▌  | 6/8 [46:48<15:35, 467.97s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  88%|████████▊ | 7/8 [54:36<07:47, 467.91s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1272: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.8. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR: 100%|██████████| 8/8 [1:02:23<00:00, 467.47s/it]ML LR: 100%|██████████| 8/8 [1:02:23<00:00, 467.88s/it]
+DL LSTM:   0%|          | 0/8 [00:00<?, ?it/s]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/torch/cuda/__init__.py:146: UserWarning: 
+NVIDIA A100-SXM4-40GB with CUDA capability sm_80 is not compatible with the current PyTorch installation.
+The current PyTorch install supports CUDA capabilities sm_37 sm_50 sm_60 sm_70.
+If you want to use the NVIDIA A100-SXM4-40GB GPU with PyTorch, please check the instructions at https://pytorch.org/get-started/locally/
+
+  warnings.warn(incompatible_device_warn.format(device_name, capability, " ".join(arch_list), device_name))
+DL LSTM:   0%|          | 0/8 [01:53<?, ?it/s]
+Traceback (most recent call last):
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 672, in <module>
+    main()
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 662, in main
+    results_df, summary, comparison = run_benchmark(args)
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 555, in run_benchmark
+    out = train_eval_deep_fold(
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 348, in train_eval_deep_fold
+    model = deep_model_builders[model_name](num_classes=len(ACTIVITY_ORDER)).to(device)
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/torch/nn/modules/module.py", line 927, in to
+    return self._apply(convert)
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/torch/nn/modules/module.py", line 579, in _apply
+    module._apply(fn)
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 189, in _apply
+    self.flatten_parameters()
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/torch/nn/modules/rnn.py", line 175, in flatten_parameters
+    torch._cudnn_rnn_flatten_weight(
+RuntimeError: CUDA error: no kernel image is available for execution on the device
+CUDA kernel errors might be asynchronously reported at some other API call,so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.

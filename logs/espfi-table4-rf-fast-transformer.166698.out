@@ -1,0 +1,49 @@
+Torch version: 2.7.1+cu118
+torch.version.cuda: 11.8
+GPU: Tesla V100S-PCIE-32GB
+Required arch: sm_70
+Torch arch list: sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_37 sm_90
+Device: cuda
+Dataset kind: rf_csv
+Data root: /gpfs/workdir/balazsk/test/ModelCode/Data/rf-based_data
+Scenes: [1, 2, 3]
+Inferred activity-id mapping: {6: 'bouncing_ball', 8: 'forward_bend', 3: 'hand_swing', 7: 'jogging_in_place', 1: 'jumping_jack', 9: 'sitting_down', 2: 'squatting', 10: 'standing', 4: 'walk_from_center_to_rx', 5: 'walk_from_center_to_tx'}
+Activity order: ['jumping_jack', 'squatting', 'hand_swing', 'walk_from_center_to_rx', 'walk_from_center_to_tx', 'bouncing_ball', 'jogging_in_place', 'forward_bend', 'sitting_down', 'standing']
+Total samples: 4800
+Scenes: [1, 2, 3]
+Subjects: [1, 2, 3, 4, 5, 6, 7, 8]
+Activities: ['bouncing_ball', 'forward_bend', 'hand_swing', 'jogging_in_place', 'jumping_jack', 'sitting_down', 'squatting', 'standing', 'walk_from_center_to_rx', 'walk_from_center_to_tx']
+
+Samples per scene:
+   scene     scene_name     n
+0      1  Environment 1  1600
+1      2  Environment 2  1600
+2      3  Environment 3  1600
+Total LOSO folds: 24
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_fast_transformer/benchmark_fold_results.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_fast_transformer/benchmark_scene_summary.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_fast_transformer/benchmark_vs_paper_table4.csv
+Saved: /gpfs/workdir/balazsk/test/ModelCode/benchmark_outputs_rf_fast_transformer/benchmark_vs_paper_table4.md
+
+Scene summary (rounded):
+model_type       model  scene    scene_name  folds  acc_mean  acc_std  f1_mean
+        DL         CNN      1 Environment 1      8     37.75     6.56    32.56
+        DL         CNN      2 Environment 2      8     26.88    11.41    20.03
+        DL         CNN      3 Environment 3      8     32.75     8.56    25.71
+        DL         GRU      1 Environment 1      8     39.81    10.06    36.33
+        DL         GRU      2 Environment 2      8     24.56    16.36    20.31
+        DL         GRU      3 Environment 3      8     29.88     9.95    24.80
+        DL        LSTM      1 Environment 1      8     41.19     8.79    36.48
+        DL        LSTM      2 Environment 2      8     32.75    12.14    28.53
+        DL        LSTM      3 Environment 3      8     32.88     8.10    26.57
+        DL Transformer      1 Environment 1      8     39.12     6.75    34.01
+        DL Transformer      2 Environment 2      8     27.12     8.53    21.36
+        DL Transformer      3 Environment 3      8     31.62     8.75    25.25
+        ML          RF      1 Environment 1      8     35.31     7.41    31.34
+        ML          RF      2 Environment 2      8     24.12     7.99    18.98
+        ML          RF      3 Environment 3      8     29.94     5.49    23.77
+        ML         SVM      1 Environment 1      8     40.75     7.29    36.36
+        ML         SVM      2 Environment 2      8     29.62    12.76    22.57
+        ML         SVM      3 Environment 3      8     23.25    10.54    16.60
+
+Comparison vs paper: skipped / empty for this dataset.

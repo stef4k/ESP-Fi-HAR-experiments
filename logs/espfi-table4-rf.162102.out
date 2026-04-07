@@ -1,0 +1,22 @@
+Torch version: 2.7.1+cu118
+torch.version.cuda: 11.8
+GPU: NVIDIA A100-SXM4-40GB
+Required arch: sm_80
+Torch arch list: sm_50 sm_60 sm_70 sm_75 sm_80 sm_86 sm_37 sm_90
+Device: cuda
+Dataset kind: rf_csv
+Data root: /gpfs/workdir/balazsk/test/ModelCode/Data/rf-based_data
+Scenes: [1, 2, 3]
+Inferred activity-id mapping: {6: 'bouncing_ball', 8: 'forward_bend', 3: 'hand_swing', 7: 'jogging_in_place', 1: 'jumping_jack', 9: 'sitting_down', 2: 'squatting', 10: 'standing', 4: 'walk_from_center_to_rx', 5: 'walk_from_center_to_tx'}
+Activity order: ['jumping_jack', 'squatting', 'hand_swing', 'walk_from_center_to_rx', 'walk_from_center_to_tx', 'bouncing_ball', 'jogging_in_place', 'forward_bend', 'sitting_down', 'standing']
+Total samples: 4800
+Scenes: [1, 2, 3]
+Subjects: [1, 2, 3, 4, 5, 6, 7, 8]
+Activities: ['bouncing_ball', 'forward_bend', 'hand_swing', 'jogging_in_place', 'jumping_jack', 'sitting_down', 'squatting', 'standing', 'walk_from_center_to_rx', 'walk_from_center_to_tx']
+
+Samples per scene:
+   scene     scene_name     n
+0      1  Environment 1  1600
+1      2  Environment 2  1600
+2      3  Environment 3  1600
+Total LOSO folds: 24

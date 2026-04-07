@@ -1,0 +1,2 @@
+| model_type   | model   | scene   | scene_name   | folds   | acc_mean   | acc_std   | f1_mean   | paper_acc_mean   | paper_acc_std   | paper_f1_mean   | delta_acc_mean   | delta_acc_std   | delta_f1_mean   |
+|--------------|---------|---------|--------------|---------|------------|-----------|-----------|------------------|-----------------|-----------------|------------------|-----------------|-----------------|

@@ -1,0 +1,52 @@
+ML SVM:   0%|          | 0/8 [00:00<?, ?it/s]ML SVM:  12%|█▎        | 1/8 [00:28<03:19, 28.49s/it]ML SVM:  25%|██▌       | 2/8 [00:32<01:25, 14.26s/it]ML SVM:  38%|███▊      | 3/8 [00:37<00:48,  9.70s/it]ML SVM:  50%|█████     | 4/8 [00:41<00:30,  7.57s/it]ML SVM:  62%|██████▎   | 5/8 [00:45<00:19,  6.38s/it]ML SVM:  75%|███████▌  | 6/8 [00:49<00:11,  5.68s/it]ML SVM:  88%|████████▊ | 7/8 [00:54<00:05,  5.26s/it]ML SVM: 100%|██████████| 8/8 [00:58<00:00,  4.96s/it]ML SVM: 100%|██████████| 8/8 [00:58<00:00,  7.34s/it]
+ML RF:   0%|          | 0/8 [00:00<?, ?it/s]ML RF:  12%|█▎        | 1/8 [00:05<00:37,  5.35s/it]ML RF:  25%|██▌       | 2/8 [00:10<00:32,  5.37s/it]ML RF:  38%|███▊      | 3/8 [00:16<00:26,  5.33s/it]ML RF:  50%|█████     | 4/8 [00:21<00:21,  5.44s/it]ML RF:  62%|██████▎   | 5/8 [00:27<00:16,  5.54s/it]ML RF:  75%|███████▌  | 6/8 [00:32<00:11,  5.50s/it]ML RF:  88%|████████▊ | 7/8 [00:38<00:05,  5.50s/it]ML RF: 100%|██████████| 8/8 [00:43<00:00,  5.51s/it]ML RF: 100%|██████████| 8/8 [00:43<00:00,  5.48s/it]
+ML LR:   0%|          | 0/8 [00:00<?, ?it/s]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  12%|█▎        | 1/8 [06:44<47:08, 404.05s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  25%|██▌       | 2/8 [13:27<40:23, 403.89s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  38%|███▊      | 3/8 [20:11<33:38, 403.74s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  50%|█████     | 4/8 [26:55<26:55, 403.75s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  62%|██████▎   | 5/8 [33:38<20:11, 403.70s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  75%|███████▌  | 6/8 [40:24<13:29, 404.54s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR:  88%|████████▊ | 7/8 [47:08<06:44, 404.24s/it]/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/sklearn/linear_model/_sag.py:348: ConvergenceWarning: The max_iter was reached which means the coef_ did not converge
+  warnings.warn(
+ML LR: 100%|██████████| 8/8 [53:51<00:00, 403.90s/it]ML LR: 100%|██████████| 8/8 [53:51<00:00, 403.97s/it]
+DL LSTM:   0%|          | 0/8 [00:00<?, ?it/s]DL LSTM:  12%|█▎        | 1/8 [02:09<15:05, 129.33s/it]DL LSTM:  25%|██▌       | 2/8 [02:36<06:56, 69.44s/it] DL LSTM:  38%|███▊      | 3/8 [03:04<04:11, 50.31s/it]DL LSTM:  50%|█████     | 4/8 [03:32<02:45, 41.36s/it]DL LSTM:  62%|██████▎   | 5/8 [03:59<01:49, 36.40s/it]DL LSTM:  75%|███████▌  | 6/8 [04:27<01:06, 33.35s/it]DL LSTM:  88%|████████▊ | 7/8 [04:54<00:31, 31.46s/it]DL LSTM: 100%|██████████| 8/8 [05:22<00:00, 30.21s/it]DL LSTM: 100%|██████████| 8/8 [05:22<00:00, 40.27s/it]
+DL GRU:   0%|          | 0/8 [00:00<?, ?it/s]DL GRU:  12%|█▎        | 1/8 [00:28<03:20, 28.62s/it]DL GRU:  25%|██▌       | 2/8 [00:57<02:52, 28.73s/it]DL GRU:  38%|███▊      | 3/8 [01:25<02:23, 28.63s/it]DL GRU:  50%|█████     | 4/8 [01:54<01:54, 28.67s/it]DL GRU:  62%|██████▎   | 5/8 [02:23<01:25, 28.65s/it]DL GRU:  75%|███████▌  | 6/8 [02:51<00:57, 28.66s/it]DL GRU:  88%|████████▊ | 7/8 [03:20<00:28, 28.72s/it]DL GRU: 100%|██████████| 8/8 [03:49<00:00, 28.67s/it]DL GRU: 100%|██████████| 8/8 [03:49<00:00, 28.67s/it]
+DL CNN:   0%|          | 0/8 [00:00<?, ?it/s]DL CNN:  12%|█▎        | 1/8 [00:54<06:23, 54.71s/it]DL CNN:  25%|██▌       | 2/8 [01:46<05:17, 52.98s/it]DL CNN:  38%|███▊      | 3/8 [02:38<04:21, 52.39s/it]DL CNN:  50%|█████     | 4/8 [03:30<03:29, 52.46s/it]DL CNN:  62%|██████▎   | 5/8 [04:22<02:36, 52.25s/it]DL CNN:  75%|███████▌  | 6/8 [05:14<01:44, 52.10s/it]DL CNN:  88%|████████▊ | 7/8 [06:06<00:52, 52.01s/it]DL CNN: 100%|██████████| 8/8 [06:58<00:00, 52.00s/it]DL CNN: 100%|██████████| 8/8 [06:58<00:00, 52.28s/it]
+DL ResNet18:   0%|          | 0/8 [00:00<?, ?it/s]DL ResNet18:  12%|█▎        | 1/8 [04:11<29:20, 251.46s/it]DL ResNet18:  25%|██▌       | 2/8 [08:21<25:04, 250.69s/it]DL ResNet18:  38%|███▊      | 3/8 [12:31<20:52, 250.53s/it]DL ResNet18:  50%|█████     | 4/8 [16:42<16:41, 250.49s/it]DL ResNet18:  62%|██████▎   | 5/8 [20:52<12:31, 250.45s/it]DL ResNet18:  75%|███████▌  | 6/8 [25:03<08:20, 250.41s/it]DL ResNet18:  88%|████████▊ | 7/8 [29:13<04:10, 250.41s/it]DL ResNet18: 100%|██████████| 8/8 [33:23<00:00, 250.41s/it]DL ResNet18: 100%|██████████| 8/8 [33:23<00:00, 250.49s/it]
+DL EfficientNetLite:   0%|          | 0/8 [00:00<?, ?it/s]DL EfficientNetLite:  12%|█▎        | 1/8 [01:37<11:20, 97.17s/it]DL EfficientNetLite:  25%|██▌       | 2/8 [03:11<09:33, 95.64s/it]DL EfficientNetLite:  38%|███▊      | 3/8 [04:46<07:55, 95.18s/it]DL EfficientNetLite:  50%|█████     | 4/8 [06:20<06:19, 94.94s/it]DL EfficientNetLite:  62%|██████▎   | 5/8 [07:55<04:44, 94.80s/it]DL EfficientNetLite:  75%|███████▌  | 6/8 [09:30<03:09, 94.75s/it]DL EfficientNetLite:  88%|████████▊ | 7/8 [11:04<01:34, 94.72s/it]DL EfficientNetLite: 100%|██████████| 8/8 [12:39<00:00, 94.67s/it]DL EfficientNetLite: 100%|██████████| 8/8 [12:39<00:00, 94.92s/it]
+DL Transformer:   0%|          | 0/8 [00:00<?, ?it/s]DL Transformer:  12%|█▎        | 1/8 [14:42<1:42:54, 882.04s/it]DL Transformer:  25%|██▌       | 2/8 [29:21<1:28:01, 880.31s/it]DL Transformer:  38%|███▊      | 3/8 [44:00<1:13:18, 879.80s/it]DL Transformer:  50%|█████     | 4/8 [58:39<58:37, 879.41s/it]  DL Transformer:  62%|██████▎   | 5/8 [1:13:18<43:57, 879.31s/it]DL Transformer:  75%|███████▌  | 6/8 [1:27:57<29:18, 879.26s/it]DL Transformer:  88%|████████▊ | 7/8 [1:42:36<14:39, 879.14s/it]DL Transformer: 100%|██████████| 8/8 [1:57:15<00:00, 879.12s/it]DL Transformer: 100%|██████████| 8/8 [1:57:15<00:00, 879.43s/it]
+DL MobileNetV3:   0%|          | 0/8 [00:00<?, ?it/s]DL MobileNetV3:  12%|█▎        | 1/8 [01:26<10:05, 86.45s/it]DL MobileNetV3:  25%|██▌       | 2/8 [02:51<08:35, 85.86s/it]DL MobileNetV3:  38%|███▊      | 3/8 [04:17<07:08, 85.68s/it]DL MobileNetV3:  50%|█████     | 4/8 [05:42<05:42, 85.58s/it]DL MobileNetV3:  62%|██████▎   | 5/8 [07:08<04:16, 85.54s/it]DL MobileNetV3:  75%|███████▌  | 6/8 [08:33<02:51, 85.57s/it]DL MobileNetV3:  88%|████████▊ | 7/8 [09:59<01:25, 85.54s/it]DL MobileNetV3: 100%|██████████| 8/8 [11:24<00:00, 85.53s/it]DL MobileNetV3: 100%|██████████| 8/8 [11:24<00:00, 85.61s/it]
+Traceback (most recent call last):
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1050, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1027, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1004, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'tabulate'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 707, in <module>
+    "f1_mean",
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 698, in main
+    return pd.DataFrame(
+  File "/gpfs/workdir/balazsk/test/ModelCode/table4_benchmark.py", line 658, in save_outputs
+    ]
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/pandas/util/_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/pandas/core/frame.py", line 2994, in to_markdown
+    tabulate = import_optional_dependency("tabulate")
+  File "/gpfs/users/balazsk/.conda/envs/har/lib/python3.10/site-packages/pandas/compat/_optional.py", line 138, in import_optional_dependency
+    raise ImportError(msg)
+ImportError: Missing optional dependency 'tabulate'.  Use pip or conda to install tabulate.
