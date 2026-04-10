@@ -5,3 +5,4 @@ ModelCode/benchmark_outputs/*
 *.pyc*
 *.csv
 *.mat
+.vscode/
